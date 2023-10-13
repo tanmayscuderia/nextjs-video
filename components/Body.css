@@ -1,0 +1,11 @@
+.sidebar-container {
+    background: #fff;
+    height: 100%;
+    overflow: auto;
+}
+
+@media only screen and (max-width: 1050px)  {
+    .body-container {
+        flex-direction: column-reverse;
+    }
+}

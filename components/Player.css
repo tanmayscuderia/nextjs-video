@@ -1,0 +1,56 @@
+.react-player {
+    width: 60vw !important;
+    height: 60vh !important;
+    border-radius: 50px;;
+}
+
+.react-player__preview {
+    -moz-box-shadow: rgba(0, 0, 0, 0.4) 3px 3px 10px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.4) 3px 3px 10px;
+    -o-box-shadow: rgba(0, 0, 0, 0.4) 3px 3px 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 3px 3px 10px;
+    border-radius: 12px;
+}
+
+.player-container {
+    align-items: center;
+    background: #fff;
+    justify-content: center;
+    height: 100%;
+    width: calc(100vw - 420px);
+}
+
+.video-details-outside {
+    display: flex;
+    gap: 30px;
+    margin: 16px;
+    width: 58vw;
+}
+
+.snippet-channel-details {
+    width: 200px;
+}
+
+.snippet-channelTitle {
+    font-size: 16px;
+}
+
+.snippet-publishTime {
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 1050px)  {
+    .react-player {
+        width: 90vw !important;
+        height: 40vh !important;
+        margin-top: 20px;
+    }
+
+    .player-container {
+        width: 100%;
+    }
+
+    .video-details-outside {
+        width: 85vw;
+    }
+}
