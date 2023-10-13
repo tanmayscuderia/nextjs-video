@@ -6,7 +6,6 @@ import 'react-loading-skeleton/dist/skeleton.css';
 import './Player.css';
 
 function Player() {
-  // const [loading, setloading] = useState(false);
   const { state } = useContext(ServiceContext);
 
   let data = state.selectedVideo[0];

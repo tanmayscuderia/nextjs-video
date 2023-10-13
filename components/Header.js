@@ -10,8 +10,11 @@ function Header() {
     const { state, dispatch } = useContext(ServiceContext);
 
     function searchVideos() {
-        console.log('search', InputValue);
-        dispatch({type: 'SEARCH_VIDEO', payload: InputValue});
+        dispatch({ type: 'SEARCH_VIDEO', payload: InputValue });
+        window.scrollTo({
+            top: document.getElementsByClassName("side-image-container")[0].offsetTop,
+            behavior: "smooth",
+        });
     }
 
     return (
@@ -31,7 +34,7 @@ function Header() {
                             }
                         }}
                     />
-                    <BsSearch className='mr-3' onClick={searchVideos}/>
+                    <BsSearch className='mr-3' onClick={searchVideos} />
                 </div>
             </div>
         </div>

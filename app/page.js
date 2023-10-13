@@ -2,10 +2,7 @@
 import { useContext, useEffect } from 'react';
 import Header from '../components/Header';
 import Body from '../components/Body';
-import Service from '../components/Data/SidebarItems';
 import { ServiceContext } from '../context/servicecontext';
-
-// const ServiceContext = createContext();
 
 export default function Home() {
   const { state, dispatch } = useContext(ServiceContext);
@@ -19,11 +16,6 @@ export default function Home() {
         dispatch({type: 'SET_SELECTED_VIDEO', payload: data.items[0]});
       })
   }, []);
-
-  // useEffect(() => {
-  //   dispatch({type: 'SET_SERVICE_DATA', payload: Service});
-  //   dispatch({type: 'SET_SELECTED_VIDEO', payload: Service.items[0]});
-  // }, []);
 
   return (
     <main>

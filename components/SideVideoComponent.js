@@ -8,6 +8,10 @@ function SideVideoComponent() {
 
     function selectVideo(video) {
         dispatch({ type: 'SET_SELECTED_VIDEO', payload: video });
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
     }
 
     return (
