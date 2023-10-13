@@ -20,7 +20,7 @@ const reducer = (state, action) => {
                 return { ...state };
             } else {
                 console.log('empty');
-                return { ...state, filtertedData: state.serviceData };
+                return { ...state, filtertedData: JSON.parse(JSON.stringify(state.serviceData)) };
             }
         default:
             return state;
